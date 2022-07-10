@@ -39,6 +39,7 @@ function loadPage() {
     let foodImageContainer = document.createElement('div')
     let foodImage = document.createElement('img')
     foodImage.src = mainFoodImage
+    foodImage.id = "main-food-image"
     foodImageContainer.appendChild(foodImage)
 
     mainContents.appendChild(motto)

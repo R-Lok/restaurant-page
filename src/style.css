@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto:wght@400;700&display=swap');
 
 :root {
     --highlight-color: rgb(255, 255, 255);
@@ -34,3 +34,23 @@ header > button {
     margin-right: auto;
 }
 
+#main-content {
+    position: relative;
+}
+
+#main-food-image {
+    width: 100vw;
+    height: auto;
+}
+
+.motto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--highlight-color);
+    font-size: 48px;
+    width: fit-content;
+    font-family: 'Arima', sans-serif;
+    font-weight: bold;
+}
