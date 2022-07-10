@@ -41,6 +41,8 @@ header > button {
 #main-food-image {
     width: 100vw;
     height: auto;
+    position: relative;
+    z-index: -1;
 }
 
 .motto {
