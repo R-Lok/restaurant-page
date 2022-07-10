@@ -1,6 +1,7 @@
 import {loadPage} from './pageload'
 import {loadContactsPage} from './contact'
 import {loadMenuPage} from './menu'
+import './style.css'
 
 function applyEventListeners () {
     let homeBtn = document.querySelector('.home-btn')

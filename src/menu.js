@@ -28,6 +28,14 @@ function loadMenuPage() {
 
 
     contentContainer.appendChild(header)
+
+    let menuContainer = document.createElement('div')
+    menuContainer.id = 'menu-container'
+
+    contentContainer.appendChild(menuContainer)
+
+    //finish menu html contents
+    
 }
 
 export {loadMenuPage}

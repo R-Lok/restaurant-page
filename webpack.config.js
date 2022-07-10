@@ -11,10 +11,16 @@ module.exports = {
             {
                 test: /\.(jpg|png|jpeg|gif|svg)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             }
         ]
     },
     devtool: 'inline-source-map',
+    devServer: {
+        static: './dist'
+    },
     mode: 'development',
-    
 }
