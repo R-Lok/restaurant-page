@@ -55,4 +55,6 @@ header > button {
     width: fit-content;
     font-family: 'Arima', sans-serif;
     font-weight: bold;
+    text-align: center;
+    padding: 50px;
 }
