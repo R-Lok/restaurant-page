@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "learning project to get familiar with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-Lok/restaurant-page.git"
+  },
+  "author": "R Lok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-Lok/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/R-Lok/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
