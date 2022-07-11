@@ -47,9 +47,12 @@ function loadMenuPage() {
     mainDishSectionTitle.innerText = 'Main Dishes'
     mainDishContainer.append(mainDishSectionTitle)
 
-    menu.append(menuTitle, mainDishContainer)
     mainDishContainer.appendChild(Dish('Beef Roast', 'Delicious beef roast with our signature berry sauce', 20))
+    mainDishContainer.appendChild(Dish('Baked Salmon', 'Perfectly baked salmon fillets with a roasted red pepper sauce', 25))
+    mainDishContainer.appendChild(Dish('Seafood Jambalaya', 'A delicious dish containing a healthy serving of shrimp, scallops and crawfish', 30))
+
     menuContainer.appendChild(menu)
+    menu.append(menuTitle, mainDishContainer)
     contentContainer.appendChild(menuContainer)
 
     function newDiv() {
