@@ -21,12 +21,7 @@ function loadMenuPage() {
     menuButton.classList.add('menu-btn')
     menuButton.disabled = true
 
-    header.appendChild(restaurantName)
-    header.appendChild(homeButton)
-    header.appendChild(menuButton)
-    header.appendChild(contactsButton)
-
-
+    header.append(restaurantName, homeButton, menuButton, contactsButton)
     contentContainer.appendChild(header)
 
     let menuContainer = newDiv()
