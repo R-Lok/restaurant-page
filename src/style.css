@@ -76,4 +76,42 @@ header > button {
     width: 50vw;
     border-radius: 10px;
     display: grid;
+    padding: 3vh 3vw;
+}
+
+.title, .section-heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin: 0 0 3vh 0;
+}
+
+.section-heading {
+    font-size: 20px;
+    margin: 1vh 0;
+}
+
+.dish-container {
+    display: grid;
+    grid-template: 1.5rem 1fr / 1fr 1fr;
+    grid-template-areas: "name price"
+                         "description description"
+}
+
+.dish-name {
+    grid-area: name;
+}   
+
+.dish-price {
+    grid-area: price;
+    text-align: right;
+}
+
+.dish-description {
+    grid-area: description;
+    font-style: italic;
+    font-size: 15px;
 }
