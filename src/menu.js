@@ -47,10 +47,16 @@ function loadMenuPage() {
     mainDishContainer.appendChild(Dish('Baked Salmon', 'Perfectly baked salmon fillets with a roasted red pepper sauce', 25))
     mainDishContainer.appendChild(Dish('Seafood Jambalaya', 'A delicious dish containing a healthy serving of shrimp, scallops and crawfish', 30))
 
+    let dessertContainer = newDiv()
+    dessertContainer.classList.add('dessert-container')
+    let dessertSectionTitle = MenuSectionTitle('Desserts', dessertContainer)
 
+    dessertContainer.appendChild(Dish('Lava Cake', 'Warm chocolate cake with a molten chocolate center', 10))
+    dessertContainer.appendChild(Dish('Tiramisu', 'Our signature in-house tiramisu - limited quantity per day!', 15))
+    dessertContainer.appendChild(Dish('Crème Brûlee', 'A rich custard dessert with a layer of caramlized sugar on top', 10))
 
     menuContainer.appendChild(menu)
-    menu.append(menuTitle, mainDishContainer)
+    menu.append(menuTitle, mainDishContainer, dessertContainer)
     contentContainer.appendChild(menuContainer)
 
     function newDiv() {
