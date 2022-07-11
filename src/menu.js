@@ -40,9 +40,11 @@ function loadMenuPage() {
     menuTitle.innerText = "Menu"
 
     let mainDishContainer = newDiv()
+    mainDishContainer.classList.add('main-dish-container')
+
     let mainDishSectionTitle = newDiv()
-    mainDishContainer.classList.add('menu-section-title')
-    mainDishContainer.innerText = 'Main Dishes'
+    mainDishSectionTitle.classList.add('main-dish-section-title')
+    mainDishSectionTitle.innerText = 'Main Dishes'
     mainDishContainer.append(mainDishSectionTitle)
 
     menu.append(menuTitle, mainDishContainer)
