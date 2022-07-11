@@ -55,8 +55,16 @@ function loadMenuPage() {
     dessertContainer.appendChild(Dish('Tiramisu', 'Our signature in-house tiramisu - limited quantity per day!', 15))
     dessertContainer.appendChild(Dish('Crème Brûlee', 'A rich custard dessert with a layer of caramlized sugar on top', 10))
 
+    let drinkContainer = newDiv()
+    drinkContainer.classList.add('drink-container')
+    let drinkSectionTitle = MenuSectionTitle('Drinks', drinkContainer)
+
+    drinkContainer.appendChild(Dish('Bubble Tea', 'Our spin on bubble tea, using specially sourced tea leaves', 10))
+    drinkContainer.appendChild(Dish('Iced Lemon Tea', 'A Hong Kong special - very refreshing and sweet!', 8))
+    drinkContainer.appendChild(Dish('Canned Drink', 'Coca-cola, Fanta, Sprite, Dr Pepper', 5))
+
     menuContainer.appendChild(menu)
-    menu.append(menuTitle, mainDishContainer, dessertContainer)
+    menu.append(menuTitle, mainDishContainer, dessertContainer, drinkContainer)
     contentContainer.appendChild(menuContainer)
 
     function newDiv() {
