@@ -21,12 +21,7 @@ function loadContactsPage() {
     menuButton.classList.add('menu-btn')
     menuButton.disabled = false
 
-    header.appendChild(restaurantName)
-    header.appendChild(homeButton)
-    header.appendChild(menuButton)
-    header.appendChild(contactsButton)
-
-
+    header.append(restaurantName, homeButton, menuButton, contactsButton)
     contentContainer.appendChild(header)
 }
 
