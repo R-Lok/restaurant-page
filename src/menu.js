@@ -41,15 +41,13 @@ function loadMenuPage() {
 
     let mainDishContainer = newDiv()
     mainDishContainer.classList.add('main-dish-container')
-
-    let mainDishSectionTitle = newDiv()
-    mainDishSectionTitle.classList.add('main-dish-section-title', 'section-heading')
-    mainDishSectionTitle.innerText = 'Main Dishes'
-    mainDishContainer.append(mainDishSectionTitle)
+    let mainDishSectionTitle = MenuSectionTitle('Main Dishes', mainDishContainer)
 
     mainDishContainer.appendChild(Dish('Beef Roast', 'Delicious beef roast with our signature berry sauce', 20))
     mainDishContainer.appendChild(Dish('Baked Salmon', 'Perfectly baked salmon fillets with a roasted red pepper sauce', 25))
     mainDishContainer.appendChild(Dish('Seafood Jambalaya', 'A delicious dish containing a healthy serving of shrimp, scallops and crawfish', 30))
+
+
 
     menuContainer.appendChild(menu)
     menu.append(menuTitle, mainDishContainer)
@@ -57,6 +55,15 @@ function loadMenuPage() {
 
     function newDiv() {
         return document.createElement('div')
+    }
+
+    function MenuSectionTitle(title, appendTarget) {
+        let newSectionTitle = newDiv()
+        newSectionTitle.classList.add('section-heading')
+        newSectionTitle.innerText = title
+        appendTarget.append(newSectionTitle)
+
+        return newSectionTitle
     }
 
     function Dish(name, description, price){
