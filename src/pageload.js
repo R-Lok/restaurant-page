@@ -38,11 +38,8 @@ function loadPage() {
     foodImage.id = "main-food-image"
     foodImageContainer.appendChild(foodImage)
 
-    mainContents.appendChild(motto)
-    mainContents.appendChild(foodImage)
-
-    contentContainer.appendChild(header)
-    contentContainer.appendChild(mainContents)
+    mainContents.append(motto, foodImage)
+    contentContainer.append(header, mainContents)
 }
 
 export {loadPage}
