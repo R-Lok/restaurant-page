@@ -116,3 +116,9 @@ header > button {
     font-style: italic;
     font-size: 15px;
 }
+
+.person-image {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+}
