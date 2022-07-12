@@ -36,9 +36,35 @@ function loadContactsPage() {
     contactsTitle.classList.add('title')
     contactsTitle.innerText = 'Contact Information'
 
-    contacts.append(contactsTitle)
+    let manager = Contact('Bob Smith', 'Restaurant Manager', '8888-1111', 'bobsmith@moodfoods.com')
+
+    contacts.append(contactsTitle, manager)
     contactsContainer.append(contacts)
     contentContainer.append(contactsContainer)
+
+    function Contact(name, role, phoneNumber, email) {
+        let personContainer = newDiv()
+        personContainer.classList.add('person-container')
+
+        let personName = newDiv()
+        personName.classList.add('person-name')
+        personName.innerText = name
+
+        let personRole = newDiv()
+        personRole.classList.add('person-role')
+        personRole.innerText = role
+
+        let personPhoneNo = newDiv()
+        personPhoneNo.classList.add('person-number')
+        personPhoneNo.innerText = phoneNumber
+
+        let personEmail = newDiv()
+        personEmail.classList.add('person-email')
+        personEmail.innerText = email
+
+        personContainer.append(personName, personRole, personPhoneNo, personEmail)
+        return personContainer
+    }
 }
 
 export {loadContactsPage}
