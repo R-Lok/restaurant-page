@@ -1,3 +1,5 @@
+import {newDiv} from './htmlfunctions'
+
 function loadMenuPage() {
     let contentContainer = document.querySelector("#content")
     
@@ -61,10 +63,6 @@ function loadMenuPage() {
     menuContainer.appendChild(menu)
     menu.append(menuTitle, mainDishContainer, dessertContainer, drinkContainer)
     contentContainer.appendChild(menuContainer)
-
-    function newDiv() {
-        return document.createElement('div')
-    }
 
     function MenuSectionTitle(title, appendTarget) {
         let newSectionTitle = newDiv()

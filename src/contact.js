@@ -1,3 +1,5 @@
+import {newDiv} from './htmlfunctions'
+
 function loadContactsPage() {
     let contentContainer = document.querySelector("#content")
     
