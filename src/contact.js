@@ -25,6 +25,20 @@ function loadContactsPage() {
 
     header.append(restaurantName, homeButton, menuButton, contactsButton)
     contentContainer.appendChild(header)
+
+    let contactsContainer = newDiv()
+    contactsContainer.id = 'contacts-container'
+
+    let contacts = newDiv()
+    contacts.id = 'contacts'
+
+    let contactsTitle = newDiv()
+    contactsTitle.classList.add('title')
+    contactsTitle.innerText = 'Contact Information'
+
+    contacts.append(contactsTitle)
+    contactsContainer.append(contacts)
+    contentContainer.append(contactsContainer)
 }
 
 export {loadContactsPage}
