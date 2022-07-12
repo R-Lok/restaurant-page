@@ -1,5 +1,7 @@
 import {newDiv} from './htmlfunctions'
 import managerPic from './manager.jpeg'
+import chefPic from './chef.jpeg'
+import chefTwoPic from './chef2.jpeg'
 
 function loadContactsPage() {
     let contentContainer = document.querySelector("#content")
@@ -38,8 +40,10 @@ function loadContactsPage() {
     contactsTitle.innerText = 'Contact Information'
 
     let manager = Contact('Bob Smith', 'Restaurant Manager', '8888-1111', 'bobsmith@moodfoods.com', managerPic)
+    let chef = Contact('John Doe', 'Chef', '7777-1111', 'johndoe@moodfood.com', chefPic)
+    let chefTwo = Contact ('Jane Doe', 'Chef', '6666-1111', 'janedoe@moodfood.com', chefTwoPic)
 
-    contacts.append(contactsTitle, manager)
+    contacts.append(contactsTitle, manager, chef, chefTwo)
     contactsContainer.append(contacts)
     contentContainer.append(contactsContainer)
 

@@ -118,6 +118,10 @@ header > button {
     font-size: 15px;
 }
 
+#contacts {
+    row-gap: 10px;
+}
+
 .person-container {
     display: grid;
     grid-template: 1fr / 1fr auto;
