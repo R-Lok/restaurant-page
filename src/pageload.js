@@ -1,4 +1,5 @@
 import mainFoodImage from './food-image.jpeg';
+import {newDiv} from './htmlfunctions'
 
 function loadPage() {
     let contentContainer = document.querySelector("#content")
@@ -28,17 +29,38 @@ function loadPage() {
     let mainContents = document.createElement('div')
     mainContents.id = 'main-content'
 
+    let heroBanner = newDiv()
+    heroBanner.classList.add('banner')
+
     let motto = document.createElement('div')
     motto.classList.add('motto')
     motto.innerText = "Perfect food, fitting for your mood"
 
-    let foodImageContainer = document.createElement('div')
     let foodImage = document.createElement('img')
     foodImage.src = mainFoodImage
     foodImage.id = "main-food-image"
-    foodImageContainer.appendChild(foodImage)
+    heroBanner.append(motto, foodImage)
 
-    mainContents.append(motto, foodImage)
+    let restaurantInformationContainer = newDiv()
+    restaurantInformationContainer.classList.add('restaurant-info-container')
+
+    let restaurantDescriptionContainer = newDiv()
+    restaurantDescriptionContainer.classList.add("restaurant-description-outer") 
+    let restaurantDescription = document.createElement('p')
+    restaurantDescription.classList.add('restaurant-description-inner', 'info-container')
+    restaurantDescription.innerText = "Moodfood aims to provide delicious, appetizing meals regardless of the mood you are in. Our menu changes every season to keep things fresh and exciting. Come pay us a visit!"
+    restaurantDescriptionContainer.append(restaurantDescription)
+    
+    let openingHoursContainer = newDiv()
+    openingHoursContainer.classList.add('opening-hours-outer')
+
+    let locationContainer = newDiv()
+    locationContainer.classList.add('location-outer')
+
+    restaurantInformationContainer.append(restaurantDescriptionContainer, openingHoursContainer, locationContainer)
+
+
+    mainContents.append(heroBanner, restaurantInformationContainer)
     contentContainer.append(header, mainContents)
 }
 

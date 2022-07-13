@@ -63,6 +63,34 @@ header > button {
     padding: 50px;
 }
 
+.info-container {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.500)
+}
+
+.restaurant-info-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas: "description description"
+                         "hours location";
+    justify-items: center;
+    background: var(--highlight-color);
+}
+
+.restaurant-description-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: description;
+    padding: 50px;
+}
+
+.restaurant-description-inner {
+    width: 50vw
+}
+
 #menu-container, #contacts-container {
     display: flex;
     justify-content: center;
@@ -147,4 +175,12 @@ header > button {
 .person-name {
     font-size: 20px;
     font-weight: bold;
+}
+
+img {
+    display: block;
+}
+
+.banner {
+    position: relative;
 }
