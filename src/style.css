@@ -72,9 +72,8 @@ header > button {
 
 .restaurant-info-container {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    grid-template-areas: "description description"
-                         "hours location";
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "hours location";
     justify-items: center;
     background: var(--highlight-color);
 }

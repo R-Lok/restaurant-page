@@ -44,20 +44,13 @@ function loadPage() {
     let restaurantInformationContainer = newDiv()
     restaurantInformationContainer.classList.add('restaurant-info-container')
 
-    let restaurantDescriptionContainer = newDiv()
-    restaurantDescriptionContainer.classList.add("restaurant-description-outer") 
-    let restaurantDescription = document.createElement('p')
-    restaurantDescription.classList.add('restaurant-description-inner', 'info-container')
-    restaurantDescription.innerText = "Moodfood aims to provide delicious, appetizing meals regardless of the mood you are in. Our menu changes every season to keep things fresh and exciting. Come pay us a visit!"
-    restaurantDescriptionContainer.append(restaurantDescription)
-    
     let openingHoursContainer = newDiv()
     openingHoursContainer.classList.add('opening-hours-outer')
 
     let locationContainer = newDiv()
     locationContainer.classList.add('location-outer')
 
-    restaurantInformationContainer.append(restaurantDescriptionContainer, openingHoursContainer, locationContainer)
+    restaurantInformationContainer.append(openingHoursContainer, locationContainer)
 
 
     mainContents.append(heroBanner, restaurantInformationContainer)
